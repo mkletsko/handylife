@@ -251,6 +251,8 @@ html .sellers {
   height: 800px;
   background-color: #f2f2f2;
   padding-bottom: 90px;
+  /*tabs*/
+  /*END tabs*/
   /*tab content*/
 }
 html .sellers .tabs {
@@ -258,35 +260,34 @@ html .sellers .tabs {
   display: inline-block;
   margin: 0 auto;
   margin-top: 80px;
-  vertical-align: middle;
-  /*div {
-        padding-top:10px;
-      }*/
+  text-align: center;
 }
 html .sellers .tabs ul li {
   display: block;
   float: left;
   position: relative;
   height: 75px;
-  margin-left: 15%;
   margin-bottom: 15px;
+  margin-left: 12%;
   font-family: Avalon;
   font-size: 28pt;
   text-align: center;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 0 !important;
   color: #5b5c5a;
+}
+html .sellers .tabs ul li a {
+  padding: 0;
 }
 html .sellers .tabs ul li a:hover {
   height: 60px;
-  padding: 10px 15px;
+  padding: 0;
   background-color: #f2f2f2 !important;
   border-bottom: 0 solid #f2f2f2;
   color: #0098c8;
   cursor: pointer;
 }
 html .sellers .tabs ul li.active {
-  padding: 10px 15px;
   background-color: #f2f2f2 !important;
   border-bottom: 2px solid #0098c8;
   color: #0098c8;
@@ -303,149 +304,204 @@ html .sellers .tabs ul li.active a:focus {
   cursor: pointer;
 }
 html .sellers .tabs ul li.active:hover {
-  padding: 10px 15px;
+  padding: 0;
   background-color: #f2f2f2 !important;
   border-bottom: 2px solid #0098c8;
   color: #0098c8;
   cursor: pointer;
 }
 html .sellers .tabs ul li:hover {
-  padding: 10px 15px;
+  padding: 0;
   background-color: #f2f2f2 !important;
   border-bottom: 2px solid #0098c8;
   color: #0098c8;
   cursor: pointer;
 }
 html .sellers .tab-content {
-  border: 1px solid black;
   height: 395px;
   /*END tab content*/
 }
 html .sellers .tab-content .tab-pane {
+  padding: 0;
   height: 395px;
 }
-html .sellers .tab-content .tab-pane #demo5 {
+html .sellers .tab-content .tab-pane .scroll-img {
+  width: 100%;
+  margin-top: -11px;
+  padding: 0;
+  font-size: 0;
+  height: 142px;
+  overflow: hidden;
+}
+html .sellers .tab-content .tab-pane .scroll-img ul {
+  width: 100%;
+  height: 600px;
+  margin: 0;
+}
+html .sellers .tab-content .tab-pane .scroll-img ul li {
+  display: inline-block;
+  margin: 0 0 10px 10px;
+}
+html .sellers .tab-content .tab-pane #sellers-show,
+html .sellers .tab-content .tab-pane #sellers-show-1,
+html .sellers .tab-content .tab-pane #sellers-show-2 {
   width: 100%;
   height: 395px;
 }
-html .sellers .tab-content .tab-pane #demo5 ul {
+html .sellers .tab-content .tab-pane #sellers-show ul,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul {
   padding: 0;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li {
-  padding: 0;
+html .sellers .tab-content .tab-pane #sellers-show ul li,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li {
   width: 285px;
-  margin-left: 0;
   height: 395px;
-  /*sel*/
-  /*END sel*/
-  /*sel-first*/
-  /*END sel-first*/
+  margin-left: 0;
+  padding: 0;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel {
-  width: 100%;
-  height: 390px;
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  cursor: default;
   float: left;
+  height: 390px;
+  margin-left: 0;
   overflow: hidden;
   position: relative;
-  margin-top: 0;
-  margin-left: 0;
   text-align: center;
-  cursor: default;
-  border: 1px solid #e0e0e0;
-  background-color: #ffffff;
-  /*mask*/
-  /*END mask*/
+  width: 100%;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel img {
-  position: relative;
-  margin-top: 10px;
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel img,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel img,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel img {
   margin-bottom: 15px;
+  margin-top: 10px;
+  position: relative;
   vertical-align: middle;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel .seller-info {
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel .seller-info,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel .seller-info,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel .seller-info {
   width: 100%;
-  padding: 20px 0 30px 30px;
   border-top: 1px solid #e0e0e0;
-  font-size: 18px;
   color: #555555;
+  font-size: 18px;
+  padding: 20px 0 30px 30px;
   text-align: left;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel .seller-info .model-seller {
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel .seller-info .model-seller,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel .seller-info .model-seller,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel .seller-info .model-seller {
   padding: 0;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel .seller-info span:nth-child(1) {
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel .seller-info span:nth-child(1),
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel .seller-info span:nth-child(1),
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel .seller-info span:nth-child(1) {
   font-weight: bold;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel .seller-info .seller-price {
-  padding: 0;
-  margin-top: 5px;
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel .seller-info .seller-price,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel .seller-info .seller-price,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel .seller-info .seller-price {
+  color: #eb7a2d;
   font-family: Arial;
   font-size: 14pt;
-  color: #eb7a2d;
+  margin-top: 5px;
+  padding: 0;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel .mask {
-  width: 100%;
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel .mask,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel .mask,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel .mask {
   height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
   left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel .mask a.info {
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel .mask a.info,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel .mask a.info,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel .mask a.info {
+  background-color: #ffffff;
+  color: #555555;
   display: inline-block;
-  width: 170px;
+  font-size: 12pt;
   height: 45px;
-  text-decoration: none;
+  left: 0;
   margin-top: 100px;
   padding-top: 12px;
-  left: 0;
-  background-color: #ffffff;
-  font-size: 12pt;
-  color: #555555;
+  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   vertical-align: middle;
-  text-align: center;
+  width: 170px;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel .mask a.info img {
-  position: absolute;
-  top: 1px;
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel .mask a.info img,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel .mask a.info img,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel .mask a.info img {
   bottom: 0;
-  left: 0;
-  right: 0;
   float: left;
+  left: 0;
   margin-left: 10px;
+  position: absolute;
+  right: 0;
+  top: 1px;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel .mask a:nth-child(2) {
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel .mask a.info:hover,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel .mask a.info:hover,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel .mask a.info:hover {
+  -webkit-box-shadow: 0 0 5px #000000;
+  box-shadow: 0 0 5px #000000;
+}
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel .mask a:nth-child(2),
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel .mask a:nth-child(2),
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel .mask a:nth-child(2) {
   margin-top: 20px;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel .mask a.info:hover {
-  -webkit-box-shadow: 0 0 5px #000;
-          box-shadow: 0 0 5px #000;
-}
-html .sellers .tab-content .tab-pane #demo5 ul li .sel-first img {
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel-first img,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel-first img,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel-first img {
   -webkit-transition: all 0.2s linear;
-          transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel-first .mask {
-  opacity: 0;
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel-first .mask,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel-first .mask,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel-first .mask {
+  -webkit-transition: all 0.4s ease-in-out;
   background-color: rgba(219, 127, 8, 0.7);
+  opacity: 0;
   -webkit-transition: all 0.4s ease-in-out;
           transition: all 0.4s ease-in-out;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel-first .mask a.info {
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel-first .mask a.info,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel-first .mask a.info,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel-first .mask a.info {
+  -webkit-transition: all 0.2s ease-in-out;
   opacity: 0;
   -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel-first:hover img {
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel-first:hover img,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel-first:hover img,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel-first:hover img {
+  -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel-first:hover .mask {
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel-first:hover .mask,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel-first:hover .mask,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel-first:hover .mask {
   opacity: 1;
 }
-html .sellers .tab-content .tab-pane #demo5 ul li .sel-first:hover a.info {
+html .sellers .tab-content .tab-pane #sellers-show ul li .sel-first:hover a.info,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li .sel-first:hover a.info,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li .sel-first:hover a.info {
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -webkit-transition-delay: 0.2s;
   opacity: 1;
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
@@ -453,8 +509,18 @@ html .sellers .tab-content .tab-pane #demo5 ul li .sel-first:hover a.info {
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
-html .sellers .tab-content .tab-pane #demo5-btn {
+html .sellers .tab-content .tab-pane #sellers-show ul li:hover,
+html .sellers .tab-content .tab-pane #sellers-show-1 ul li:hover,
+html .sellers .tab-content .tab-pane #sellers-show-2 ul li:hover {
+  border: none;
+}
+html .sellers .tab-content .tab-pane #sellers-show.scroll-img ul {
+  width: 1500px;
+}
+html .sellers .tab-content .tab-pane #sellers-show-btn {
   display: block;
+  padding-top: 10px;
+  width: 680px;
 }
 html .services {
   margin-bottom: 45px;

@@ -3,49 +3,49 @@
     <head>
         <title>Handyhilfe</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/scroller.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     </head>
     <body>
-        
+
         <!--header-->
         <header>
             <!--header_logo-->
             <div class="container-fluid">
                 <div class="row">
-                  
+
                    <!--Logo-->
-                    <div class="col-lg-2 col-lg-offset-1">
+                    <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 ">
                         <img src="img/logo.png" alt="">
                     </div><!--END logo-->
-                    
+
                     <!--Sign in-->
-                    <div class="col-lg-1 col-lg-offset-4 sign-in">
+                    <div class="col-lg-1 col-lg-offset-4 col-md-1 col-md-offset-3 sign-in">
                         <p><a href="#"><i class="fa fa-sign-in fa-2x"></i><span>&nbsp; Sign in</span></a></p>
                     </div>
-                    <div class="col-lg-1 sign-in">
+                    <div class="col-lg-1 col-md-1 sign-in">
                         <p><a href="#"><i class="fa fa-cog fa-2x"></i><span>&nbsp;Settings</span></a></p>
                     </div><!--END sign in-->
-                    
+
                     <!--Check-out-->
-                    <div class="col-lg-2 check-out">
+                    <div class="col-lg-2 col-md-3 check-out">
                         <div class="row">
-                            <div class="col-lg-6 check-price">
+                            <div class="col-lg-6 col-md-6 check-price">
                                 <span>945.99&euro;</span>
                                 <span>2 <item></item>items</span>
                             </div>
-                            <div class="col-lg-6 cart">
+                            <div class="col-lg-4 col-md-4 cart">
                                 <img src="img/cart.png" alt="">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-lg-12 col-md-12">
                                 <a href="#" class="checkout-button">check out</a>
                             </div>
                         </div>
-                    </div><!--END heck-out-->   
-                </div>  
+                    </div><!--END heck-out-->
+                </div>
             </div><!--END header_logo-->
-            
+
             <!--header_navigation-->
             <nav class="navbar navbar-default">
                 <div class="container col-lg-offset-1">
@@ -99,7 +99,7 @@
                 </div><!-- /.container-fluid -->
             </nav><!--END header_navigation-->
         </header><!--END header-->
-        
+
         <!--shop-now-slider-->
         <div class="container-fluid slider-part">
             <div class="row">
@@ -195,188 +195,826 @@
                     <div class="col-lg-12">
                         <div class="tabs">
                             <ul class="nav nav-tabs">
-                                <li class="active"><a href="#tab-1" data-toggle="tab">Tabs1</a></li>
-                                <li><a href="#tab-2" data-toggle="tab">Tabs2</a></li>
-                                <li><a href="#tab-3" data-toggle="tab">Tabs3</a></li>
+                                <li class="active"><a href="#tab-1" data-toggle="tab">New Arrivals</a></li>
+                                <li><a href="#tab-2" data-toggle="tab">Popular</a></li>
+                                <li><a href="#tab-3" data-toggle="tab">Best Sellers</a></li>
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane fade in active" id="tab-1">
-                                    <p>
 
-                                    <!--devo-->
-                                    <div id="demo5">
-                                        <ul>
-                                            <li>
+                                        <!--sellers-show-->
+                                        <div id="sellers-show" class="scroll-img">
+                                            <ul>
+                                                <li>
+                                                    <!--sel-->
+                                                    <div class="col-lg-3 sel sel-first">
+                                                        <img src="img/sellers/seller-1.png">
 
-                                                <!--sel-->
-                                                <div class="col-lg-3 sel sel-first">
-                                                    <img src="img/sellers/seller-1.png">
-
-                                                    <div class="row">
-                                                        <div class="col-lg-12 seller-info">
-                                                            <div class="row">
-                                                                <div class="col-lg-8 model-seller">
-                                                                    <span>LCD Assembly Black<br></span>
-                                                                    <span>iPhone 6</span>
-                                                                </div>
-                                                                <div class="col-lg-4 seller-price">
-                                                                    <span>991,35&euro;</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mask">
-                                                            <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;
-                                                                &nbsp;
-                                                                &nbsp; ADD TO CART</a>
-                                                            <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--END sel-->
-                                            </li>
-
-                                            <li>
-
-                                                <!--sel-->
-                                                <div class="col-lg-3 sel sel-first">
-                                                    <img src="img/sellers/seller-1.png">
-
-                                                    <div class="row">
-                                                        <div class="col-lg-12 seller-info">
-                                                            <div class="row">
-                                                                <div class="col-lg-8 model-seller">
-                                                                    <span>LCD Assembly Black<br></span>
-                                                                    <span>iPhone 6</span>
-                                                                </div>
-                                                                <div class="col-lg-4 seller-price">
-                                                                    <span>991,35&euro;</span>
+                                                        <div class="row">
+                                                            <div class="col-lg-12 seller-info">
+                                                                <div class="row">
+                                                                    <div class="col-lg-8 model-seller">
+                                                                        <span>LCD Assembly Black<br></span>
+                                                                        <span>iPhone 6</span>
+                                                                    </div>
+                                                                    <div class="col-lg-4 seller-price">
+                                                                        <span>991,35&euro;</span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="mask">
-                                                            <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;
-                                                                &nbsp;
-                                                                &nbsp; ADD TO CART</a>
-                                                            <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--END sel-->
-                                            </li>
-
-                                            <li>
-
-                                                <!--sel-->
-                                                <div class="col-lg-3 sel sel-first">
-                                                    <img src="img/sellers/seller-1.png">
-
-                                                    <div class="row">
-                                                        <div class="col-lg-12 seller-info">
-                                                            <div class="row">
-                                                                <div class="col-lg-8 model-seller">
-                                                                    <span>LCD Assembly Black<br></span>
-                                                                    <span>iPhone 6</span>
-                                                                </div>
-                                                                <div class="col-lg-4 seller-price">
-                                                                    <span>991,35&euro;</span>
-                                                                </div>
+                                                            <div class="mask">
+                                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
                                                             </div>
                                                         </div>
-                                                        <div class="mask">
-                                                            <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;
-                                                                &nbsp;
-                                                                &nbsp; ADD TO CART</a>
-                                                            <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
-                                                        </div>
                                                     </div>
-                                                </div>
-                                                <!--END sel-->
-                                            </li>
+                                                    <!--END sel--></li>
+                                                <li><!--sel-->
+                                                    <div class="col-lg-3 sel sel-first">
+                                                        <img src="img/sellers/seller-1.png">
 
-
-                                            <li>
-
-                                                <!--sel-->
-                                                <div class="col-lg-3 sel sel-first">
-                                                    <img src="img/sellers/seller-1.png">
-
-                                                    <div class="row">
-                                                        <div class="col-lg-12 seller-info">
-                                                            <div class="row">
-                                                                <div class="col-lg-8 model-seller">
-                                                                    <span>LCD Assembly Black<br></span>
-                                                                    <span>iPhone 6</span>
-                                                                </div>
-                                                                <div class="col-lg-4 seller-price">
-                                                                    <span>991,35&euro;</span>
+                                                        <div class="row">
+                                                            <div class="col-lg-12 seller-info">
+                                                                <div class="row">
+                                                                    <div class="col-lg-8 model-seller">
+                                                                        <span>LCD Assembly Black<br></span>
+                                                                        <span>iPhone 6</span>
+                                                                    </div>
+                                                                    <div class="col-lg-4 seller-price">
+                                                                        <span>991,35&euro;</span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="mask">
-                                                            <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;
-                                                                &nbsp;
-                                                                &nbsp; ADD TO CART</a>
-                                                            <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--END sel-->
-                                            </li>
-
-                                            <li>
-
-                                                <!--sel-->
-                                                <div class="col-lg-3 sel sel-first">
-                                                    <img src="img/sellers/seller-1.png">
-
-                                                    <div class="row">
-                                                        <div class="col-lg-12 seller-info">
-                                                            <div class="row">
-                                                                <div class="col-lg-8 model-seller">
-                                                                    <span>LCD Assembly Black<br></span>
-                                                                    <span>iPhone 6</span>
-                                                                </div>
-                                                                <div class="col-lg-4 seller-price">
-                                                                    <span>991,35&euro;</span>
-                                                                </div>
+                                                            <div class="mask">
+                                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
                                                             </div>
                                                         </div>
-                                                        <div class="mask">
-                                                            <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;
-                                                                &nbsp;
-                                                                &nbsp; ADD TO CART</a>
-                                                            <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                                    </div>
+                                                    <!--END sel-->
+                                                </li>
+
+                                                <li>
+                                                    <!--sel-->
+                                                    <div class="col-lg-3 sel sel-first">
+                                                        <img src="img/sellers/seller-1.png">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-12 seller-info">
+                                                                <div class="row">
+                                                                    <div class="col-lg-8 model-seller">
+                                                                        <span>LCD Assembly Black<br></span>
+                                                                        <span>iPhone 6</span>
+                                                                    </div>
+                                                                    <div class="col-lg-4 seller-price">
+                                                                        <span>991,35&euro;</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mask">
+                                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <!--END sel-->
-                                            </li>
+                                                    <!--END sel--></li>
+                                                <li><!--sel-->
+                                                    <div class="col-lg-3 sel sel-first">
+                                                        <img src="img/sellers/seller-1.png">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-12 seller-info">
+                                                                <div class="row">
+                                                                    <div class="col-lg-8 model-seller">
+                                                                        <span>LCD Assembly Black<br></span>
+                                                                        <span>iPhone 6</span>
+                                                                    </div>
+                                                                    <div class="col-lg-4 seller-price">
+                                                                        <span>991,35&euro;</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mask">
+                                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--END sel-->
+                                                </li>
+
+                                                <li>
+                                                    <!--sel-->
+                                                    <div class="col-lg-3 sel sel-first">
+                                                        <img src="img/sellers/seller-1.png">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-12 seller-info">
+                                                                <div class="row">
+                                                                    <div class="col-lg-8 model-seller">
+                                                                        <span>LCD Assembly Black<br></span>
+                                                                        <span>iPhone 6</span>
+                                                                    </div>
+                                                                    <div class="col-lg-4 seller-price">
+                                                                        <span>991,35&euro;</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mask">
+                                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--END sel--></li>
+                                                <li><!--sel-->
+                                                    <div class="col-lg-3 sel sel-first">
+                                                        <img src="img/sellers/seller-1.png">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-12 seller-info">
+                                                                <div class="row">
+                                                                    <div class="col-lg-8 model-seller">
+                                                                        <span>LCD Assembly Black<br></span>
+                                                                        <span>iPhone 6</span>
+                                                                    </div>
+                                                                    <div class="col-lg-4 seller-price">
+                                                                        <span>991,35&euro;</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mask">
+                                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--END sel-->
+                                                </li>
+
+                                                <li>
+                                                    <!--sel-->
+                                                    <div class="col-lg-3 sel sel-first">
+                                                        <img src="img/sellers/seller-1.png">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-12 seller-info">
+                                                                <div class="row">
+                                                                    <div class="col-lg-8 model-seller">
+                                                                        <span>LCD Assembly Black<br></span>
+                                                                        <span>iPhone 6</span>
+                                                                    </div>
+                                                                    <div class="col-lg-4 seller-price">
+                                                                        <span>991,35&euro;</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mask">
+                                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--END sel--></li>
+                                                <li><!--sel-->
+                                                    <div class="col-lg-3 sel sel-first">
+                                                        <img src="img/sellers/seller-1.png">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-12 seller-info">
+                                                                <div class="row">
+                                                                    <div class="col-lg-8 model-seller">
+                                                                        <span>LCD Assembly Black<br></span>
+                                                                        <span>iPhone 6</span>
+                                                                    </div>
+                                                                    <div class="col-lg-4 seller-price">
+                                                                        <span>991,35&euro;</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mask">
+                                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--END sel-->
+                                                </li>
+
+                                                <li>
+                                                    <!--sel-->
+                                                    <div class="col-lg-3 sel sel-first">
+                                                        <img src="img/sellers/seller-1.png">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-12 seller-info">
+                                                                <div class="row">
+                                                                    <div class="col-lg-8 model-seller">
+                                                                        <span>LCD Assembly Black<br></span>
+                                                                        <span>iPhone 6</span>
+                                                                    </div>
+                                                                    <div class="col-lg-4 seller-price">
+                                                                        <span>991,35&euro;</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mask">
+                                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--END sel--></li>
+                                                <li><!--sel-->
+                                                    <div class="col-lg-3 sel sel-first">
+                                                        <img src="img/sellers/seller-1.png">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-12 seller-info">
+                                                                <div class="row">
+                                                                    <div class="col-lg-8 model-seller">
+                                                                        <span>LCD Assembly Black<br></span>
+                                                                        <span>iPhone 6</span>
+                                                                    </div>
+                                                                    <div class="col-lg-4 seller-price">
+                                                                        <span>991,35&euro;</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mask">
+                                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--END sel-->
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <!--END sellers-show-->
+
+                                        <!--btn for sellers-show-->
+                                        <div id="sellers-show-btn" class="text-center">
+                                            <div class="btn" id="sellers-show-backward"><i class="icon-chevron-left"></i> Backward</div>
+                                            <div class="btn" id="sellers-show-forward">Forward <i class="icon-chevron-right"></i></div>
+                                        </div>
+                                        <!--END btn for sellers-show-->
 
 
-                                        </ul>
-                                    </div>
-                                    <!--demo-->
-
-                                    <div id="demo5-btn" class="text-center">
-                                        <button class="btn" id="demo5-backward"><i class="icon-chevron-left"></i> Backward</button>
-                                        <button class="btn" id="demo5-forward">Forward <i class="icon-chevron-right"></i></button>
-                                    </div>
-
-                                    </p>
                                 </div>
                                 <div class="tab-pane fade in" id="tab-2">
-                                    <p>Text Paragraf2</p>
+                                <!--sellers-show-->
+                                <div id="sellers-show-1" class="scroll-img">
+                                <ul>
+                                <li>
+                                    <!--sel-->
+                                    <div class="col-lg-3 sel sel-first">
+                                        <img src="img/sellers/seller-1.png">
+
+                                        <div class="row">
+                                            <div class="col-lg-12 seller-info">
+                                                <div class="row">
+                                                    <div class="col-lg-8 model-seller">
+                                                        <span>LCD Assembly Black<br></span>
+                                                        <span>iPhone 6</span>
+                                                    </div>
+                                                    <div class="col-lg-4 seller-price">
+                                                        <span>991,35&euro;</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mask">
+                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END sel--></li>
+                                <li><!--sel-->
+                                    <div class="col-lg-3 sel sel-first">
+                                        <img src="img/sellers/seller-1.png">
+
+                                        <div class="row">
+                                            <div class="col-lg-12 seller-info">
+                                                <div class="row">
+                                                    <div class="col-lg-8 model-seller">
+                                                        <span>LCD Assembly Black<br></span>
+                                                        <span>iPhone 6</span>
+                                                    </div>
+                                                    <div class="col-lg-4 seller-price">
+                                                        <span>991,35&euro;</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mask">
+                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END sel-->
+                                </li>
+
+                                <li>
+                                    <!--sel-->
+                                    <div class="col-lg-3 sel sel-first">
+                                        <img src="img/sellers/seller-1.png">
+
+                                        <div class="row">
+                                            <div class="col-lg-12 seller-info">
+                                                <div class="row">
+                                                    <div class="col-lg-8 model-seller">
+                                                        <span>LCD Assembly Black<br></span>
+                                                        <span>iPhone 6</span>
+                                                    </div>
+                                                    <div class="col-lg-4 seller-price">
+                                                        <span>991,35&euro;</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mask">
+                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END sel--></li>
+                                <li><!--sel-->
+                                    <div class="col-lg-3 sel sel-first">
+                                        <img src="img/sellers/seller-1.png">
+
+                                        <div class="row">
+                                            <div class="col-lg-12 seller-info">
+                                                <div class="row">
+                                                    <div class="col-lg-8 model-seller">
+                                                        <span>LCD Assembly Black<br></span>
+                                                        <span>iPhone 6</span>
+                                                    </div>
+                                                    <div class="col-lg-4 seller-price">
+                                                        <span>991,35&euro;</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mask">
+                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END sel-->
+                                </li>
+
+                                <li>
+                                    <!--sel-->
+                                    <div class="col-lg-3 sel sel-first">
+                                        <img src="img/sellers/seller-1.png">
+
+                                        <div class="row">
+                                            <div class="col-lg-12 seller-info">
+                                                <div class="row">
+                                                    <div class="col-lg-8 model-seller">
+                                                        <span>LCD Assembly Black<br></span>
+                                                        <span>iPhone 6</span>
+                                                    </div>
+                                                    <div class="col-lg-4 seller-price">
+                                                        <span>991,35&euro;</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mask">
+                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END sel--></li>
+                                <li><!--sel-->
+                                    <div class="col-lg-3 sel sel-first">
+                                        <img src="img/sellers/seller-1.png">
+
+                                        <div class="row">
+                                            <div class="col-lg-12 seller-info">
+                                                <div class="row">
+                                                    <div class="col-lg-8 model-seller">
+                                                        <span>LCD Assembly Black<br></span>
+                                                        <span>iPhone 6</span>
+                                                    </div>
+                                                    <div class="col-lg-4 seller-price">
+                                                        <span>991,35&euro;</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mask">
+                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END sel-->
+                                </li>
+
+                                <li>
+                                    <!--sel-->
+                                    <div class="col-lg-3 sel sel-first">
+                                        <img src="img/sellers/seller-1.png">
+
+                                        <div class="row">
+                                            <div class="col-lg-12 seller-info">
+                                                <div class="row">
+                                                    <div class="col-lg-8 model-seller">
+                                                        <span>LCD Assembly Black<br></span>
+                                                        <span>iPhone 6</span>
+                                                    </div>
+                                                    <div class="col-lg-4 seller-price">
+                                                        <span>991,35&euro;</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mask">
+                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END sel--></li>
+                                <li><!--sel-->
+                                    <div class="col-lg-3 sel sel-first">
+                                        <img src="img/sellers/seller-1.png">
+
+                                        <div class="row">
+                                            <div class="col-lg-12 seller-info">
+                                                <div class="row">
+                                                    <div class="col-lg-8 model-seller">
+                                                        <span>LCD Assembly Black<br></span>
+                                                        <span>iPhone 6</span>
+                                                    </div>
+                                                    <div class="col-lg-4 seller-price">
+                                                        <span>991,35&euro;</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mask">
+                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END sel-->
+                                </li>
+
+                                <li>
+                                    <!--sel-->
+                                    <div class="col-lg-3 sel sel-first">
+                                        <img src="img/sellers/seller-1.png">
+
+                                        <div class="row">
+                                            <div class="col-lg-12 seller-info">
+                                                <div class="row">
+                                                    <div class="col-lg-8 model-seller">
+                                                        <span>LCD Assembly Black<br></span>
+                                                        <span>iPhone 6</span>
+                                                    </div>
+                                                    <div class="col-lg-4 seller-price">
+                                                        <span>991,35&euro;</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mask">
+                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END sel--></li>
+                                <li><!--sel-->
+                                    <div class="col-lg-3 sel sel-first">
+                                        <img src="img/sellers/seller-1.png">
+
+                                        <div class="row">
+                                            <div class="col-lg-12 seller-info">
+                                                <div class="row">
+                                                    <div class="col-lg-8 model-seller">
+                                                        <span>LCD Assembly Black<br></span>
+                                                        <span>iPhone 6</span>
+                                                    </div>
+                                                    <div class="col-lg-4 seller-price">
+                                                        <span>991,35&euro;</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mask">
+                                                <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp; &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp; VIEW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END sel-->
+                                </li>
+
+                                </ul>
+                                </div>
+                                <!--END sellers-show-->
+
+                                <!--btn for sellers-show-->
+                                <div id="sellers-show-btn" class="text-center">
+                                    <div class="btn" id="sellers-show-backward"><i class="icon-chevron-left"></i> Backward</div>
+                                    <div class="btn" id="sellers-show-forward">Forward <i class="icon-chevron-right"></i></div>
+                                </div>
+                                <!--END btn for sellers-show-->
+
+
+
+
                                 </div>
                                 <div class="tab-pane fade in" id="tab-3">
-                                    <p>Text Paragraf3</p>
+                                    <!--sellers-show-->
+                                    <div id="sellers-show-2" class="scroll-img">
+                                    <ul>
+                                    <li>
+                                        <!--sel-->
+                                        <div class="col-lg-3 sel sel-first">
+                                            <img src="img/sellers/seller-1.png">
+
+                                            <div class="row">
+                                                <div class="col-lg-12 seller-info">
+                                                    <div class="row">
+                                                        <div class="col-lg-8 model-seller">
+                                                            <span>LCD Assembly Black<br></span>
+                                                            <span>iPhone 6</span>
+                                                        </div>
+                                                        <div class="col-lg-4 seller-price">
+                                                            <span>991,35&euro;</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mask">
+                                                    <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp;
+                                                        &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                    <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp;
+                                                        VIEW</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--END sel--></li>
+                                    <li><!--sel-->
+                                        <div class="col-lg-3 sel sel-first">
+                                            <img src="img/sellers/seller-1.png">
+
+                                            <div class="row">
+                                                <div class="col-lg-12 seller-info">
+                                                    <div class="row">
+                                                        <div class="col-lg-8 model-seller">
+                                                            <span>LCD Assembly Black<br></span>
+                                                            <span>iPhone 6</span>
+                                                        </div>
+                                                        <div class="col-lg-4 seller-price">
+                                                            <span>991,35&euro;</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mask">
+                                                    <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp;
+                                                        &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                    <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp;
+                                                        VIEW</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--END sel-->
+                                    </li>
+
+                                    <li>
+                                        <!--sel-->
+                                        <div class="col-lg-3 sel sel-first">
+                                            <img src="img/sellers/seller-1.png">
+
+                                            <div class="row">
+                                                <div class="col-lg-12 seller-info">
+                                                    <div class="row">
+                                                        <div class="col-lg-8 model-seller">
+                                                            <span>LCD Assembly Black<br></span>
+                                                            <span>iPhone 6</span>
+                                                        </div>
+                                                        <div class="col-lg-4 seller-price">
+                                                            <span>991,35&euro;</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mask">
+                                                    <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp;
+                                                        &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                    <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp;
+                                                        VIEW</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--END sel--></li>
+                                    <li><!--sel-->
+                                        <div class="col-lg-3 sel sel-first">
+                                            <img src="img/sellers/seller-1.png">
+
+                                            <div class="row">
+                                                <div class="col-lg-12 seller-info">
+                                                    <div class="row">
+                                                        <div class="col-lg-8 model-seller">
+                                                            <span>LCD Assembly Black<br></span>
+                                                            <span>iPhone 6</span>
+                                                        </div>
+                                                        <div class="col-lg-4 seller-price">
+                                                            <span>991,35&euro;</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mask">
+                                                    <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp;
+                                                        &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                    <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp;
+                                                        VIEW</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--END sel-->
+                                    </li>
+
+                                    <li>
+                                        <!--sel-->
+                                        <div class="col-lg-3 sel sel-first">
+                                            <img src="img/sellers/seller-1.png">
+
+                                            <div class="row">
+                                                <div class="col-lg-12 seller-info">
+                                                    <div class="row">
+                                                        <div class="col-lg-8 model-seller">
+                                                            <span>LCD Assembly Black<br></span>
+                                                            <span>iPhone 6</span>
+                                                        </div>
+                                                        <div class="col-lg-4 seller-price">
+                                                            <span>991,35&euro;</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mask">
+                                                    <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp;
+                                                        &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                    <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp;
+                                                        VIEW</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--END sel--></li>
+                                    <li><!--sel-->
+                                        <div class="col-lg-3 sel sel-first">
+                                            <img src="img/sellers/seller-1.png">
+
+                                            <div class="row">
+                                                <div class="col-lg-12 seller-info">
+                                                    <div class="row">
+                                                        <div class="col-lg-8 model-seller">
+                                                            <span>LCD Assembly Black<br></span>
+                                                            <span>iPhone 6</span>
+                                                        </div>
+                                                        <div class="col-lg-4 seller-price">
+                                                            <span>991,35&euro;</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mask">
+                                                    <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp;
+                                                        &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                    <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp;
+                                                        VIEW</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--END sel-->
+                                    </li>
+
+                                    <li>
+                                        <!--sel-->
+                                        <div class="col-lg-3 sel sel-first">
+                                            <img src="img/sellers/seller-1.png">
+
+                                            <div class="row">
+                                                <div class="col-lg-12 seller-info">
+                                                    <div class="row">
+                                                        <div class="col-lg-8 model-seller">
+                                                            <span>LCD Assembly Black<br></span>
+                                                            <span>iPhone 6</span>
+                                                        </div>
+                                                        <div class="col-lg-4 seller-price">
+                                                            <span>991,35&euro;</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mask">
+                                                    <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp;
+                                                        &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                    <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp;
+                                                        VIEW</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--END sel--></li>
+                                    <li><!--sel-->
+                                        <div class="col-lg-3 sel sel-first">
+                                            <img src="img/sellers/seller-1.png">
+
+                                            <div class="row">
+                                                <div class="col-lg-12 seller-info">
+                                                    <div class="row">
+                                                        <div class="col-lg-8 model-seller">
+                                                            <span>LCD Assembly Black<br></span>
+                                                            <span>iPhone 6</span>
+                                                        </div>
+                                                        <div class="col-lg-4 seller-price">
+                                                            <span>991,35&euro;</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mask">
+                                                    <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp;
+                                                        &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                    <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp;
+                                                        VIEW</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--END sel-->
+                                    </li>
+
+                                    <li>
+                                        <!--sel-->
+                                        <div class="col-lg-3 sel sel-first">
+                                            <img src="img/sellers/seller-1.png">
+
+                                            <div class="row">
+                                                <div class="col-lg-12 seller-info">
+                                                    <div class="row">
+                                                        <div class="col-lg-8 model-seller">
+                                                            <span>LCD Assembly Black<br></span>
+                                                            <span>iPhone 6</span>
+                                                        </div>
+                                                        <div class="col-lg-4 seller-price">
+                                                            <span>991,35&euro;</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mask">
+                                                    <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp;
+                                                        &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                    <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp;
+                                                        VIEW</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--END sel--></li>
+                                    <li><!--sel-->
+                                        <div class="col-lg-3 sel sel-first">
+                                            <img src="img/sellers/seller-1.png">
+
+                                            <div class="row">
+                                                <div class="col-lg-12 seller-info">
+                                                    <div class="row">
+                                                        <div class="col-lg-8 model-seller">
+                                                            <span>LCD Assembly Black<br></span>
+                                                            <span>iPhone 6</span>
+                                                        </div>
+                                                        <div class="col-lg-4 seller-price">
+                                                            <span>991,35&euro;</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mask">
+                                                    <a href="#" class="info"><img src="img/sellers/cart-small.png" alt=""/>&nbsp;
+                                                        &nbsp;&nbsp;&nbsp; ADD TO CART</a>
+                                                    <a href="#" class="info"><img src="img/sellers/view.png" alt=""/>&nbsp;
+                                                        VIEW</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--END sel-->
+                                    </li>
+
+                                    </ul>
+                                    </div>
+                                    <!--END sellers-show-->
+
+                                    <!--btn for sellers-show-->
+                                    <div id="sellers-show-btn-2" class="text-center">
+                                        <div class="btn" id="sellers-show-backward-2"><i class="icon-chevron-left"></i> Backward</div>
+                                        <div class="btn" id="sellers-show-forward-2">Forward <i class="icon-chevron-right"></i></div>
+                                    </div>
+                                    <!--END btn for sellers-show-->
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section><!--END sellers-->
-
+        </section>
+        <!--END sellers-->
 
         <!--Services-->
         <section>
@@ -397,7 +1035,9 @@
                         <p>Aenean leo ligula, porttitor eu, consequat vitae,
                            eleifend ac, enim. Aliquam lorem ante, dapibus
                            in, viverra quis, feugiat a, tellus.</p>
-                    </div><!--END service-->
+                    </div>
+                    <!--END service-->
+
                     <!--service-->
                     <div class="col-lg-4 service">
                         <a href="#"><img src="img/services/service-3.png" alt=""/></a>
@@ -406,10 +1046,12 @@
                             feugiat a, tellus. Phasellus viverra
                             nulla ut metus varius laoreet. Quisque rutrum.
                             Aenean imperdiet. </p>
-                    </div><!--END service-->
+                    </div>
+                    <!--END service-->
                 </div>
             </div>
-        </section><!--END Services-->
+        </section>
+        <!--END Services-->
 
         <!--News-->
         <section class="section-gray">
@@ -434,7 +1076,9 @@
                                 </footer>
                             </article>
                         </div>
-                    </div><!--END new-->
+                    </div>
+                    <!--END new-->
+
                     <!--new-->
                     <div class="col-lg-3 new">
                         <img src="img/news/news-2.png" alt=""/>
@@ -453,7 +1097,9 @@
                                 </footer>
                             </article>
                         </div>
-                    </div><!--END new-->
+                    </div>
+                    <!--END new-->
+
                     <!--new-->
                     <div class="col-lg-3 new">
                         <img src="img/news/news-3.png" alt=""/>
@@ -472,7 +1118,9 @@
                                 </footer>
                             </article>
                         </div>
-                    </div><!--END new-->
+                    </div>
+                    <!--END new-->
+
                     <!--new-->
                     <div class="col-lg-3 new">
                         <img src="img/news/news-4.png" alt=""/>
@@ -491,10 +1139,12 @@
                                 </footer>
                             </article>
                         </div>
-                    </div><!--END new-->
+                    </div>
+                    <!--END new-->
                 </div>
             </div>
-        </section><!--END News-->
+        </section>
+        <!--END News-->
 
         <!--Footer-->
         <footer class="footer-site">
@@ -506,7 +1156,8 @@
                         <p>Aenean vulputate eleifend tellus. Aenean leo
                            ligula, porttitor eu, consequat vitae, eleifend ac,
                            enim. </p>
-                    </div><!--END Footer-logo-->
+                    </div>
+                    <!--END Footer-logo-->
                     <div class="col-lg-1 footer-information">
                         <h4>Information</h4>
                         <a href="">About Us</a><br>
@@ -529,14 +1180,17 @@
                         <form class="footer-form" role="search">
                             <input type="text" size="24" placeholder="Enter your email" autofocus>
                             <button type="submit"><i class="fa fa-play fa-1x"></i></button>
-                        </form><!--END footer_form-->
+                        </form>
+                        <!--END footer_form-->
                         <div class="social-icons">
                             <a class="social-icon facebook" href=""></a>
                             <a class="social-icon twitter" href=""></a>
                             <a class="social-icon google-plus" href=""></a>
                             <a class="social-icon pinterest" href=""></a>
                         </div>
-                    </div><!--END newsletter-->
+                    </div>
+                    <!--END newsletter-->
+
                     <!--payment-->
                     <div class="col-lg-3 payment">
                         <h4>Payment Methods</h4>
@@ -547,7 +1201,8 @@
                             <a class="payment-icon sofort" href=""></a>
                             <a class="payment-icon bitcoin" href=""></a>
                         </div>
-                    </div><!--END payment-->
+                    </div>
+                    <!--END payment-->
                 </div>
             </div>
             <!--footer-bottom-->
@@ -557,14 +1212,15 @@
                         <p>© 2015 - Handyhilfe . All Rights Reserved</p>
                     </div>
                 </div>
-            </div><!--END footer-bottom-->
-        </footer><!--END Footer-->
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            </div>
+            <!--END footer-bottom-->
+        </footer>
+        <!--END Footer-->
+
         <script src="css/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+        <script src="js/scroller.js"></script>
         <script src="js/slider.js"></script>
         <script src="js/tabs.js"></script>
-        <script src="js/scroller.js"></script>
         <script src="js/jquery.scrollbox.js"></script>
     </body>
 </html>

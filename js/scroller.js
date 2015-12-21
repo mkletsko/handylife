@@ -1,12 +1,20 @@
 $(function () {
-    $('#demo5').scrollbox({
+    $('#sellers-show').scrollbox({
         direction: 'h',
         distance: 134
     });
-    $('#demo5-backward').click(function () {
-        $('#demo5').trigger('backward');
+    $('#sellers-show-1').scrollbox({
+        direction: 'h',
+        distance: 134
     });
-    $('#demo5-forward').click(function () {
-        $('#demo5').trigger('forward');
+    /*
+    $('#sellers-show-backward').click(function () {
+        $('#sellers-show').trigger('backward');
     });
+    $('#sellers-show-forward').click(function () {
+        $('#sellers-show').trigger('forward');
+    });*/
+
 });
+
+
