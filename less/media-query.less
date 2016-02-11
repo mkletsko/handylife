@@ -1,0 +1,324 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+@screen-xs-min: 568px;
+@screen-sm-min: 767px;
+@screen-md-min: 992px;
+@screen-lg-min: 1200px;
+
+@fon-element-yellow: #eb7a2d;
+@fon-element-blue: #0098c8;
+@fon-element-yellow-spin: spin(@fon-element-yellow, 8%);
+@fon-element-blue-spin: spin(@fon-element-blue, -8%);
+
+/* Other Extra small devices (phones, max 568px) */
+@media (max-width: @screen-xs-min) {
+
+  /* HEADER */
+  header {
+    margin-bottom: 20px;
+    .header-main {
+      .row {
+        width: 100%;
+        position: relative;
+        .logo {
+          width: 100%;
+          height: auto;
+          img {
+            width: 100%;
+          }
+        }
+        .sign-in {
+          min-width: 50%;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          width: 45%;
+          float: left;
+          padding: 0;
+          font-size: 0.9em;
+          font-weight: bold;
+          text-align: left;
+          p {
+            margin-left: 20%;
+          }
+        }
+        .check-out {
+          margin-left: 4%;
+          width: 100%;
+          float: left;
+          border: 2px #c4c6cb solid;
+          font-size: 0.89em;
+          .check-price {
+            width: 35%;
+            padding: 0;
+            margin-top: 0;
+            font-size: 1.4em;
+            text-align: center;
+            span + span {
+              display: block;
+              font-size: 0.9em;
+            }
+          }
+          .cart {
+            width: 35%;
+            display: inline-block;
+            float: left;
+            margin-top: 0;
+            padding: 0;
+            img {
+              width: 45px;
+              height: auto;
+              margin-top: 3%;
+              margin-left: 0;
+            }
+          }
+          .row + .row {
+            position: absolute;
+            top: 15%;
+            right: 1%;
+            text-align: center;
+            .checkout-button {
+              display: inline-block;
+              margin-top: 0;
+              float: right;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  } /* END HEADER */
+
+  /* NAV */
+  nav.navbar {
+    border: 1px solid black;
+    .navbar-collapse {
+      overflow: hidden;
+      .nav-form {
+        display: none;
+      }
+      ul {
+        li {
+          width: 200px;
+          margin: 0 auto;
+          i.fa {
+            margin-left: 25px;
+          }
+          i.fa-home {
+            margin-left: 15px;
+            padding-right: 3px;
+          }
+          i.fa-mobile-phone {
+            margin-left: 20px;
+            padding-right: 10px;
+          }
+          i.fa-gears {
+            margin-left: 4px;
+            padding-right: 5px;
+          }
+          a {
+            border-radius: 5px;
+            color: white !important;
+          }
+          ul.dropdown-menu {
+            li {
+              a {
+                border-radius: 0;
+              }
+              a:hover {
+                background-color: @fon-element-yellow-spin !important;
+              }
+            }
+          }
+        }
+      }
+      border: 0px solid;
+    }
+
+    form.form-hidden {
+      display: block;
+      input.search-all {
+        width: 150px;
+      }
+    }
+
+  }/* END NAV */
+
+}/* END Other Extra small devices (phones, max 568px) */
+
+/* Extra small devices (phones, max 768px) */
+@media (min-width: @screen-xs-min) and (max-width: @screen-sm-min) {
+
+  /* HEADER */
+  header {
+    margin-bottom: 70px;
+    .header-main {
+      .row {
+        position: relative;
+        .logo {
+          width: 60%;
+          height: auto;
+          img {
+            width: 100%;
+          }
+        }
+        .sign-in {
+          position: absolute;
+          margin-top: 20%;
+        }
+        .sign-in + .sign-in {
+          margin-left: 200px;
+        }
+        .check-out {
+          position: absolute;
+          top: 0;
+          right: 0;
+          float: right;
+          border-bottom: 1px #c4c6cb solid;
+          font-size: 0.89em;
+          .check-price {
+            font-size: 1.5em;
+            span + span {
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+    }
+  } /* END HEADER */
+
+  /* NAV */
+  nav.navbar {
+    border: 1px solid black;
+    .navbar-collapse {
+      overflow: hidden;
+      .nav-form {
+        display: none;
+      }
+      ul {
+        li {
+          width: 200px;
+          margin: 0 auto;
+          i.fa {
+            margin-left: 25px;
+          }
+          i.fa-home {
+            margin-left: 15px;
+            padding-right: 3px;
+          }
+          i.fa-mobile-phone {
+            margin-left: 20px;
+            padding-right: 10px;
+          }
+          i.fa-gears {
+            margin-left: 4px;
+            padding-right: 5px;
+          }
+          a {
+           border-radius: 5px;
+           color: white !important;
+          }
+          ul.dropdown-menu {
+            li {
+              a {
+                border-radius: 0;
+              }
+              a:hover {
+                background-color: @fon-element-yellow-spin !important;
+              }
+            }
+          }
+        }
+      }
+      border: 0px solid;
+    }
+
+    form.form-hidden {
+      display: block;
+    }
+
+  }/* END NAV */
+
+}/* END Extra small devices (phones, max 568px) */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-min) {
+  /* HEADER */
+  header {
+    margin-bottom: 30px;
+    .header-main {
+      .row {
+        position: relative;
+        .logo {
+          img {
+            display: block;
+          }
+        }
+        .sign-in {
+          position: absolute;
+          margin-top: 30px;
+          margin-left: 450px;
+        }
+        .sign-in + .sign-in {
+          position: absolute;
+          margin-top: 90px;
+        }
+        .check-out {
+          position: absolute;
+          top: 0;
+          right: 0;
+          float: right;
+          border-right: none;
+          border-bottom: 1px #c4c6cb solid;
+          font-size: 0.89em;
+          .check-price {
+            font-size: 1.5em;
+            span + span {
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+    }
+  }/* END HEADER */
+
+  /* NAV */
+  nav.navbar {
+    .navbar-collapse {
+      .nav-form {
+        margin-right: -15%;
+      }
+    }
+  }/* END NAV */
+
+}/* END Small devices (tablets, 768px and up) */
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) and (max-width: @screen-lg-min) {
+  /* HEADER */
+  header {
+    .header-main {
+      .check-out {
+        font-size: 0.89em;
+        .check-price {
+          span + span {
+            font-size: 0.84em;
+          }
+        }
+      }
+    }
+  }/* END HEADER */
+
+  /* NAV */
+  nav.navbar {
+    .navbar-collapse {
+      .nav-form {
+        margin-right: 5%;
+      }
+    }
+  }/* END NAV */
+
+}/* END Medium devices (desktops, 992px and up) */
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {}
