@@ -13,11 +13,9 @@ html {
   /*section-gray style*/
   /*Header*/
   /*END header*/
-  /* NAV */
-  /* END NAV */
-  /* END NAV STYLE */
-  /*Slider part*/
-  /* END slider part */
+  /* Navigation */
+  /* Shop-now-slider */
+  /* END Shop-now-slider */
   /*sellers*/
   /* END sellers */
   /* Services */
@@ -32,51 +30,56 @@ html .section-gray {
 }
 html header {
   background-color: #ffffff;
+}
+html header .header-main {
+  max-width: 1400px;
+  margin: 0 auto;
+  clear: both;
   /*sign-in*/
   /*END sign-in*/
   /*check-out*/
   /*END check-out*/
 }
-html header img {
+html header .header-main img {
   margin-top: 20px;
 }
-html header .sign-in {
+html header .header-main .sign-in {
   min-width: 120px;
   margin-top: 50px;
 }
-html header .sign-in span {
+html header .header-main .sign-in span {
   position: absolute;
   margin-top: 1px;
   font-size: 1.3383333467168em;
   color: #5b5c5a;
 }
-html header .sign-in a {
+html header .header-main .sign-in a {
   text-decoration: none;
 }
-html header .sign-in a:hover {
+html header .header-main .sign-in a:hover {
   color: #00b3c8;
 }
-html header .check-out {
+html header .header-main .check-out {
   border-left: 1px #c4c6cb solid;
   border-right: 1px #c4c6cb solid;
   text-align: center;
   color: #5b5c5a;
 }
-html header .check-out .check-price {
+html header .header-main .check-out .check-price {
   margin-top: 10px;
   font-size: 1.5056250150564em;
   font-weight: bold;
   text-align: left;
 }
-html header .check-out .check-price span + span {
+html header .header-main .check-out .check-price span + span {
   display: inline-block;
   font-size: 1.0037500100376em;
   font-weight: normal;
 }
-html header .check-out .cart {
+html header .header-main .check-out .cart {
   vertical-align: middle;
 }
-html header a.checkout-button {
+html header .header-main a.checkout-button {
   display: block;
   height: 33px;
   margin-top: 15px;
@@ -91,10 +94,18 @@ html header a.checkout-button {
   vertical-align: middle;
   text-align: center;
 }
-html header .checkout-button:hover {
+html header .header-main .checkout-button:hover {
   background-color: #eb932d;
 }
-html nav.navbar {
+html nav {
+  background-color: #0098c8;
+  clear: both;
+  /* END Navigation */
+  /* END NAV STYLE */
+}
+html nav div.navbar {
+  margin: 0 auto;
+  max-width: 1400px;
   border: 0px solid black;
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -103,54 +114,54 @@ html nav.navbar {
   /*form navigation HIDDEN */
   /*END form navigation HIDDEN*/
 }
-html nav.navbar .navbar-header .navbar-toggle {
+html nav div.navbar .navbar-header .navbar-toggle {
   background-color: #eb7a2d;
   border-color: white;
 }
-html nav.navbar .navbar-header .navbar-toggle .icon-bar {
+html nav div.navbar .navbar-header .navbar-toggle .icon-bar {
   background-color: #0098c8;
 }
-html nav.navbar .navbar-header .navbar-toggle:hover {
+html nav div.navbar .navbar-header .navbar-toggle:hover {
   background-color: #eb932d;
 }
-html nav.navbar .navbar-collapse {
+html nav div.navbar .navbar-collapse {
   width: 85%;
   max-width: 1200px;
   padding: 0;
   /*END button style*/
 }
-html nav.navbar .navbar-collapse ul {
+html nav div.navbar .navbar-collapse ul {
   /*button style*/
   /*active button*/
   /*END active button*/
   /*dropdown-menu style*/
   /*END dropdown-menu style*/
 }
-html nav.navbar .navbar-collapse ul li a {
+html nav div.navbar .navbar-collapse ul li a {
   font-family: serif;
   font-size: 1.6729166833959999em;
   color: white;
 }
-html nav.navbar .navbar-collapse ul li a:hover {
+html nav div.navbar .navbar-collapse ul li a:hover {
   background-color: #00b3c8;
   color: white;
 }
-html nav.navbar .navbar-collapse ul .active a,
-html nav.navbar .navbar-collapse ul .active a:focus {
+html nav div.navbar .navbar-collapse ul .active a,
+html nav div.navbar .navbar-collapse ul .active a:focus {
   background-color: #eb7a2d;
   color: white;
 }
-html nav.navbar .navbar-collapse ul .active a:hover {
+html nav div.navbar .navbar-collapse ul .active a:hover {
   background-color: #eb932d;
   color: white;
 }
-html nav.navbar .navbar-collapse ul .dropdown .dropdown-menu {
+html nav div.navbar .navbar-collapse ul .dropdown .dropdown-menu {
   background-color: #00b3c8;
 }
-html nav.navbar .navbar-collapse ul .dropdown .dropdown-menu a:hover {
+html nav div.navbar .navbar-collapse ul .dropdown .dropdown-menu a:hover {
   background-color: #0098c8;
 }
-html nav.navbar .nav-form {
+html nav div.navbar .nav-form {
   position: absolute;
   right: 0;
   width: 320px;
@@ -159,10 +170,10 @@ html nav.navbar .nav-form {
   /*form navigation*/
   /*END form navigation*/
 }
-html nav.navbar .nav-form form.navbar-form {
+html nav div.navbar .nav-form form.navbar-form {
   width: 100%;
 }
-html nav.navbar .nav-form form.navbar-form input {
+html nav div.navbar .nav-form form.navbar-form input {
   position: relative;
   z-index: 1;
   display: inline-block;
@@ -173,7 +184,7 @@ html nav.navbar .nav-form form.navbar-form input {
   border-color: #0098c8;
   border: none;
 }
-html nav.navbar .nav-form form.navbar-form button {
+html nav div.navbar .nav-form form.navbar-form button {
   position: relative;
   z-index: 2;
   float: right;
@@ -185,19 +196,19 @@ html nav.navbar .nav-form form.navbar-form button {
   border: none;
   color: white;
 }
-html nav.navbar .nav-form form.navbar-form button:active {
+html nav div.navbar .nav-form form.navbar-form button:active {
   border: none;
 }
-html nav.navbar .nav-form form.navbar-form button:hover {
+html nav div.navbar .nav-form form.navbar-form button:hover {
   background-color: #eb932d;
 }
-html nav.navbar .form-hidden {
+html nav div.navbar .form-hidden {
   float: left;
   margin-top: 8px;
   margin-left: 8px;
   display: none;
 }
-html nav.navbar .form-hidden input {
+html nav div.navbar .form-hidden input {
   position: relative;
   z-index: 1;
   height: 34px;
@@ -205,7 +216,7 @@ html nav.navbar .form-hidden input {
   border-color: #0098c8;
   border: none;
 }
-html nav.navbar .form-hidden button {
+html nav div.navbar .form-hidden button {
   position: relative;
   z-index: 2;
   width: 37px;
@@ -215,116 +226,156 @@ html nav.navbar .form-hidden button {
   border: none;
   color: white;
 }
-html nav.navbar .form-hidden button:active {
+html nav div.navbar .form-hidden button:active {
   border: none;
 }
-html nav.navbar .form-hidden button:hover {
+html nav div.navbar .form-hidden button:hover {
   background-color: #eb932d;
 }
-html .navbar-default .navbar-nav > .open > a,
-html .navbar-default .navbar-nav > .open > a:hover,
-html .navbar-default .navbar-nav > .open > a:focus {
+html nav .navbar-default .navbar-nav > .open > a,
+html nav .navbar-default .navbar-nav > .open > a:hover,
+html nav .navbar-default .navbar-nav > .open > a:focus {
   background-color: #00b3c8;
   color: white;
 }
 html .slider-part {
-  margin-top: -22px;
-  padding-left: 0;
-  /*shop now*/
-  /* END shop now */
-  /* Fade Slider CSS */
-}
-html .slider-part .shop-now-slider {
-  padding: 0;
-  margin-right: -15px;
   color: #0098c8;
+  /* Slider-controls buttom */
+  /* END Slider-controls buttom */
 }
-html .slider-part .shop-now-slider .carousel-inner {
-  /*item*/
-  /*End item*/
+html .slider-part .carousel-inner {
+  /* ITEM */
+  /* END ITEM */
+  /* Item and content-slide */
+  /* END Item and slide content */
 }
-html .slider-part .shop-now-slider .carousel-inner .item {
-  /* END go-shop button*/
+html .slider-part .carousel-inner .item {
+  padding: 0 8.33%;
+  background-color: #d8f5fe;
 }
-html .slider-part .shop-now-slider .carousel-inner .item section {
-  width: 85%;
+html .slider-part .carousel-inner .item .row {
   margin: 0 auto;
+  /* Content for slider */
+  /* END  Content for slider */
+}
+html .slider-part .carousel-inner .item .row .content-slide {
+  max-width: 1400px;
+  height: 565px;
+  margin: 0 auto;
+}
+html .slider-part .carousel-inner .item .row .content-slide section {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  float: left;
+  -webkit-transition: 0.7s ease-in-out opacity;
+  transition: 0.7s ease-in-out opacity;
+  left: 0 !important;
   /* go-shop button*/
 }
-html .slider-part .shop-now-slider .carousel-inner .item section h2 {
-  margin-top: 6.68067%;
-  font-size: 4.18229170849em;
-}
-html .slider-part .shop-now-slider .carousel-inner .item section h1 {
+html .slider-part .carousel-inner .item .row .content-slide section h2 {
   margin-top: 1.68067%;
-  font-size: 6.0225000602256em;
+  font-size: 2.18229170849em;
 }
-html .slider-part .shop-now-slider .carousel-inner .item section p {
+html .slider-part .carousel-inner .item .row .content-slide section h1 {
+  margin-top: 8.68067%;
+  font-size: 4.0225000602256em;
+}
+html .slider-part .carousel-inner .item .row .content-slide section p {
   font-size: 1.5056250150564em;
   margin-top: 5.042016%;
   color: #5b5c5a;
 }
-html .slider-part .shop-now-slider .carousel-inner .item section a.go-shop {
+html .slider-part .carousel-inner .item .row .content-slide section a.go-shop {
+  position: absolute;
   display: block;
-  padding-top: 15px;
-  margin-top: 4.62184873%;
-  margin-bottom: 10%;
   width: 155px;
   height: 50px;
+  bottom: 140px;
+  padding-top: 15px;
   background-color: #eb7a2d;
   text-align: center;
   color: white;
   font-weight: bold;
   text-decoration: none;
 }
-html .slider-part .shop-now-slider .carousel-inner .item section .go-shop:hover {
+html .slider-part .carousel-inner .item .row .content-slide section .go-shop:hover {
   background-color: #eb932d;
 }
-html .slider-part .shop-now-slider .carousel-inner .item img {
+html .slider-part .carousel-inner .item .row .content-slide .slider-img {
+  width: 50%;
+  height: 100%;
   float: right;
 }
-html .slider-part .shop-now-slider .carousel-inner .banner-1 {
-  background: #d8f5fe url("../img/banner/banner-fon-1.png") no-repeat right;
-  background-size: cover;
-  border: 1px solid #d8f5fe;
-  border-top: none;
+html .slider-part .carousel-inner .item .row .content-slide .slider-img img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 30px;
+  float: right;
 }
-html .slider-part .shop-now-slider .carousel-inner .banner-2 {
-  background: #fceacb url("../img/banner/banner-fon-2.png") no-repeat right;
-  background-size: cover;
-  border: 1px solid #fceacb;
-  border-top: none;
+html .slider-part .carousel-inner div.slide-1 .row .content-slide section h2 {
+  margin-top: 8.68067%;
 }
-html .slider-part .shop-now-slider .carousel-inner .banner-3 {
-  background: #ddddde url("../img/banner/banner-fon-3.png") no-repeat right;
-  background-size: cover;
-  border: 1px solid #ddddde;
-  border-top: none;
+html .slider-part .carousel-inner div.slide-1 .row .content-slide section h1 {
+  margin-top: 1.68067%;
 }
-html .slider-part .shop-now-slider .carousel-inner .banner-4 {
-  background: #e0e2e3 url("../img/banner/banner-fon-4.png") no-repeat right;
-  background-size: cover;
-  border: 1px solid #e0e2e3;
-  border-top: none;
+html .slider-part .carousel-inner div.slide-2 {
+  background-color: #fceacb;
 }
-html .slider-part .carousel .item {
-  -webkit-transition: 0.7s ease-in-out opacity;
-  transition: 0.7s ease-in-out opacity;
-  left: 0 !important;
+html .slider-part .carousel-inner div.slide-2 .row .content-slide section h2 {
+  margin-top: 1.68067%;
+  font-size: 2.18229170849em;
 }
-html .slider-part .carousel .next.left,
-html .slider-part .carousel .prev.right {
-  opacity: 1;
-  z-index: 1;
+html .slider-part .carousel-inner div.slide-2 .row .content-slide section h1 {
+  margin-top: 8.68067%;
+  font-size: 4.0225000602256em;
 }
-html .slider-part .carousel .active.left,
-html .slider-part .carousel .active.right {
-  opacity: 0;
-  z-index: 2;
+html .slider-part .carousel-inner div.slide-2 .row .content-slide .slider-img img {
+  margin-top: 140px;
 }
-html .slider-part .carousel .carousel-control {
+html .slider-part .carousel-inner div.slide-3 {
+  background-color: #ddddde;
+}
+html .slider-part .carousel-inner div.slide-3 .row .content-slide img {
+  display: block;
+  position: absolute;
+  z-index: 100000;
+  right: 0;
+  bottom: 0;
+}
+html .slider-part .carousel-inner div.slide-4 {
+  background-color: #e0e2e3;
+}
+html .slider-part .carousel-inner div.slide-4 .row .content-slide img {
+  width: 50%;
+  height: auto;
+  display: block;
+  position: absolute;
+  z-index: 100000;
+  right: 0;
+  bottom: 0;
+}
+html .slider-part .slider-controls {
+  margin-left: 8.33%;
+  position: absolute;
   z-index: 1000;
-  outline: none;
+  bottom: 40px;
+}
+html .slider-part .slider-controls .carousel-control {
+  display: block;
+  width: 50px;
+  height: 50px;
+  float: left;
+  background-color: white;
+  color: #999999;
+  text-align: center;
+  font-size: 22px;
+}
+html .slider-part .slider-controls .carousel-control .glyphicon {
+  margin-top: 12px;
+}
+html .slider-part .slider-controls .left {
+  margin-right: 15px;
 }
 html .sellers {
   border: 1px solid black;
