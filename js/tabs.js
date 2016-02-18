@@ -26,6 +26,7 @@
         return this.each(createTabs);
     };
 })(jQuery);
+
 $(document).ready(function(){
     $(".tabs-sellers").lightTabs();
 });

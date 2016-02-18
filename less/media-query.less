@@ -237,10 +237,84 @@
 
     /* Slider-controls buttom */
     div.slider-controls {
-      display: none;
+      display: block;
+      margin-left: 5%;
+      bottom: 20px;
+      .carousel-control {
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+        .glyphicon {
+          margin-top: 5px;
+        }
+      }
     }/* END Slider-controls buttom */
 
   }/* END Shop-now-slider */
+
+  /* Sellers */
+  .sellers {
+    .row {
+      div.sellers-content {
+        div.tabs {
+          ul.nav-tabs {
+            width: 100%;
+            li {
+              a {
+                font-size: 1.1em;
+              }
+            }
+          }
+          div.tab-content {
+            div.tab-pane {
+              /* sel */
+              div.sel {
+                width: 100%;
+                max-width: 280px;
+                height: 260px;
+                margin: 0 auto 5px;
+                float: none;
+                div.sel-img {
+                  img {
+                    margin-top: 5px;
+                  }
+                }
+                div.sel-info {
+                  padding: 4% 4% 0% 0%;
+                  div.sel-model {
+                    text-align: center;
+                    span {
+                      padding-left: -1%;
+                      margin-left: -2%;
+                      font-size: 0.9em;
+                    }
+                    span:nth-child(1) {
+                      width: 100%;
+                    }
+                  }
+                  div.sel-price {
+                    margin-top: 4%;
+                    font-size: 1.1em;
+                  }
+                }
+                .mask {
+                  a.info {
+                    margin-top: 70px;
+                  }
+                  a {
+                    &:nth-child(2){
+                      margin-top: 20px;
+                    }
+                  }
+                }
+
+              }/* END sel */
+            }
+          }
+        }
+      }
+    }
+  }/* END Sellers */
 
 }/* END Other Extra small devices (phones, max 568px) */
 
@@ -437,7 +511,69 @@
 
   }/* END Shop-now-slider */
 
-}/* END Extra small devices (phones, max 568px) */
+  /* Sellers */
+  .sellers {
+    .row {
+      .sellers-content {
+        .tabs {
+          ul.nav-tabs {
+            width: 100%;
+            li {
+              a {
+                font-size: 2em;
+              }
+            }
+          }
+          .tab-content {
+            .tab-pane {
+              /* sel */
+              div.sel {
+                width: 50%;
+                height: 260px;
+                margin-bottom: 5px;
+                div.sel-img {
+                  img {
+                    margin-top: 5px;
+                  }
+                }
+                div.sel-info {
+                  padding: 4% 4% 0% 0%;
+                  div.sel-model {
+                    text-align: center;
+                    span {
+                      padding-left: -1%;
+                      margin-left: -2%;
+                      font-size: 0.9em;
+                    }
+                    span:nth-child(1) {
+                      width: 100%;
+                    }
+                  }
+                  div.sel-price {
+                    margin-top: 4%;
+                    font-size: 1.1em;
+                  }
+                }
+                .mask {
+                  a.info {
+                    margin-top: 70px;
+                  }
+                  a {
+                    &:nth-child(2){
+                      margin-top: 20px;
+                    }
+                  }
+                }
+
+              }/* END sel */
+            }
+          }
+        }
+      }
+    }
+  }/* END Sellers */
+
+}/* END Extra small devices (phones, 568px) and up */
 
 
 /* Small devices (tablets, 768px and up) */
@@ -562,6 +698,47 @@
 
   }/* END Shop-now-slider */
 
+  /* Sellers */
+  .sellers {
+    .row {
+      .sellers-content {
+        .tabs {
+          .tab-content {
+            .tab-pane {
+              div.sel {
+                height: 300px;
+                div.sel-img {
+                  img {
+                    //margin-top: 10px;
+                  }
+                }
+                div.sel-info {
+                  padding: 7% 4% 0% 0%;
+                  div.sel-model {
+                    text-align: center;
+                    span {
+                      padding-left: -1%;
+                      margin-left: -2%;
+                      font-size: 0.9em;
+                    }
+                    span:nth-child(1) {
+                      width: 100%;
+                    }
+                  }
+                  div.sel-price {
+                    margin-top: 10%;
+                    margin-left: -5%;
+                    font-size: 1.1em;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }/* END Sellers */
+
 }/* END Small devices (tablets, 768px and up) */
 
 
@@ -640,6 +817,34 @@
     }/* END Slider-controls buttom */
 
   }/* END Shop-now-slider */
+
+
+  /* Sellers */
+  .sellers {
+    .row {
+      .sellers-content {
+        .tabs {
+          .tab-content {
+            .tab-pane {
+              .sel {
+                div.sel-info {
+                  padding: 7% 4% 0% 0%;
+                  div.sel-model {
+                    span {
+                      font-size: 1em;
+                    }
+                  }
+                  div.sel-price {
+                    font-size: 1.3em;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }/* END Sellers */
 
 
 }/* END Medium devices (desktops, 992px and up) */
