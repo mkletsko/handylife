@@ -2,6 +2,14 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 html {
   width: 100%;
@@ -556,189 +564,248 @@ html .sellers .row .sellers-content .tabs .tab-content .tab-pane .sel-first:hove
           transition-delay: 0.2s;
 }
 html .services {
-  margin-bottom: 45px;
+  padding-top: 3.285714%;
+  padding-bottom: 3.4285%;
+  /* sellers content */
+  /* END sellers content */
 }
-html .services .service {
-  width: 31%;
-  height: 295px;
-  margin-top: 40px;
-  margin-left: 30px;
-  border: 1px solid #e0e0e0;
+html .services .services-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
+  /* Block-services */
+  /* END Block-services */
 }
-html .services .service img {
-  margin-top: 30px;
-  vertical-align: middle;
+html .services .services-content .block-services {
+  width: 31%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  padding-bottom: 2%;
 }
-html .services .service h3 {
-  margin-top: 25px;
-  margin-bottom: 28px;
-  font-family: Avalon;
-  font-size: 22pt;
+html .services .services-content .block-services .img-service a {
+  width: 100%;
+  bottom: 0;
+  display: block;
+}
+html .services .services-content .block-services .img-service a img {
+  margin-top: 10px;
+}
+html .services .services-content .block-services h3 {
+  font-size: 1.8402083517355998em;
   color: #0098c8;
 }
-html .services .service:nth-child(1) {
-  margin-left: 0;
+html .services .services-content .block-services p {
+  width: 72.972972%;
+  margin: 0 auto;
 }
-html .news .new {
-  width: 23%;
-  height: 470px;
-  margin-top: 50px;
-  margin-bottom: 95px;
-  margin-left: 30px;
-  padding: 0;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  text-align: left;
-  font-size: 10pt;
+html .services .services-content .block-services:nth-child(2) .img-service a {
+  margin-top: 20px;
+}
+html .news {
+  padding-top: 5.4166%;
+  padding-bottom: 7.9166%;
+  text-align: center;
+}
+html .news h2 {
+  font-size: 2.6766666934336em;
   color: #5b5c5a;
+  margin-bottom: 4.1666%;
 }
-html .news .new img {
+html .news .news-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  /* new */
+  /* END new */
+}
+html .news .news-content .new {
+  width: 22%;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  overflow: auto;
+  /* img-new */
+  /* END img-new */
+  /* news-description */
+  /* END news-description */
+}
+html .news .news-content .new .img-new {
   width: 100%;
+  height: 50%;
 }
-html .news .new .news-description {
-  padding: 20px;
+html .news .news-content .new .img-new img {
+  max-width: 100%;
+  height: auto;
 }
-html .news .new .news-description h4 {
-  font-family: Roboto;
-  font-size: 14pt;
+html .news .news-content .new .news-description {
+  height: 50%;
+  padding: 5.11111% 9.2592% 11.11111% 9.2592%;
 }
-html .news .new .news-description a {
+html .news .news-content .new .news-description article header {
+  margin-bottom: 0;
+}
+html .news .news-content .new .news-description article header h4 {
+  font-size: 1.5056250150564em;
+}
+html .news .news-content .new .news-description article a {
   font-style: italic;
   color: #eb7a2d;
 }
-html .news .new .news-description footer a {
+html .news .news-content .new .news-description article footer a {
   font-style: normal;
   font-weight: bold;
 }
-html .news .new:nth-child(2) {
-  margin-left: 0;
-}
-html .news h2 {
-  margin-top: 60px;
-  font-family: Avalon;
-  font-size: 32pt;
-  color: #5b5c5a;
-  text-align: center;
-}
-html footer.footer-site {
+html .main-footer {
   background-color: #1c2024;
-  padding-top: 25px;
-  font-family: Roboto;
-  font-size: 10pt;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1710416783772em;
+  line-height: 1.5056250150564em;
   color: #ffffff;
 }
-html footer.footer-site .footer-container {
-  padding-bottom: 30px;
+html .main-footer .row {
+  /* footer-content */
+  /* END footer-content */
 }
-html footer.footer-site .footer-container .footer-logo p {
-  margin-top: 20px;
+html .main-footer .row .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.666666% 0 2.916666% 0;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 }
-html footer.footer-site .footer-container .footer-information {
-  padding-right: 0;
-  text-align: left;
+html .main-footer .row .footer-content .column-foot p {
+  width: 87%;
 }
-html footer.footer-site .footer-container .footer-information h4 {
-  margin-bottom: 32px;
+html .main-footer .row .footer-content .column-foot h4,
+html .main-footer .row .footer-content .column-foot img {
+  padding-bottom: 2.91666%;
+  font-size: 1.2056250150564em;
 }
-html footer.footer-site .footer-container .footer-information a {
+html .main-footer .row .footer-content .column-foot a {
+  clear: left;
+  line-height: 2.0075000200752em;
   color: #ffffff;
 }
-html footer.footer-site .footer-container .newsletter {
-  padding-right: 0;
-  /*footer form*/
-  /*END footer form*/
-  /*social networks sprite*/
-  /*END social networks sprite*/
+html .main-footer .row .footer-content .footer-logo {
+  width: 29%;
 }
-html footer.footer-site .footer-container .newsletter p {
-  margin-top: 32px;
+html .main-footer .row .footer-content .footer-information {
+  width: 16%;
 }
-html footer.footer-site .footer-container .newsletter .footer-form {
+html .main-footer .row .footer-content .footer-support {
+  width: 14.5%;
+}
+html .main-footer .row .footer-content .footer-newsletter {
+  width: 25%;
+  /* footer form */
+  /* END footer form */
+  /* social networks sprite */
+  /* END social networks sprite */
+}
+html .main-footer .row .footer-content .footer-newsletter .footer-form {
   width: 100%;
-  margin-top: 12px;
+  margin-top: 6.896551%;
   float: left;
   color: #ffffff;
 }
-html footer.footer-site .footer-container .newsletter .footer-form input {
+html .main-footer .row .footer-content .footer-newsletter .footer-form input {
+  width: 70%;
   float: left;
   height: 35px;
   padding: 5px 0 5px 15px;
   background-color: #000000;
-  border-color: black;
+  border: none;
 }
-html footer.footer-site .footer-container .newsletter .footer-form button {
-  width: 30px;
+html .main-footer .row .footer-content .footer-newsletter .footer-form button {
+  width: 10%;
   height: 35px;
   background-color: #eb7a2d;
   color: white;
   border: none;
 }
-html footer.footer-site .footer-container .newsletter .social-icons .social-icon {
+html .main-footer .row .footer-content .footer-newsletter .social-icons .social-icon {
   width: 26px;
   height: 26px;
   background-image: url('../img/social-sprites.png');
   display: inline-block;
-  margin-top: 25px;
-  margin-right: 10px;
-  margin-bottom: 5px;
+  margin: 8.6206% 3.4482% 1.7241% 0;
 }
-html footer.footer-site .footer-container .newsletter .social-icons .social-icon:hover {
+html .main-footer .row .footer-content .footer-newsletter .social-icons .social-icon:hover {
   background-color: #34343b;
 }
-html footer.footer-site .footer-container .newsletter .social-icons .facebook {
+html .main-footer .row .footer-content .footer-newsletter .social-icons .facebook {
   background-position: 0 0;
 }
-html footer.footer-site .footer-container .newsletter .social-icons .twitter {
+html .main-footer .row .footer-content .footer-newsletter .social-icons .twitter {
   background-position: -26px 0;
 }
-html footer.footer-site .footer-container .newsletter .social-icons .google-plus {
+html .main-footer .row .footer-content .footer-newsletter .social-icons .google-plus {
   background-position: -52px 0;
 }
-html footer.footer-site .footer-container .newsletter .social-icons .pinterest {
+html .main-footer .row .footer-content .footer-newsletter .social-icons .pinterest {
   background-position: -78px 0;
 }
-html footer.footer-site .footer-container .payment {
-  padding-right: 0;
-  /*payment sprites*/
-  /*END payment sprites*/
+html .main-footer .row .footer-content .footer-payment {
+  width: 15.5%;
+  /* payment sprites */
+  /* END payment sprites */
 }
-html footer.footer-site .footer-container .payment .payment-icons .payment-icon {
+html .main-footer .row .footer-content .footer-payment .payment-icons {
+  width: 100%;
+  margin: 0 auto;
+}
+html .main-footer .row .footer-content .footer-payment .payment-icons .payment-icon {
   width: 45px;
   height: 30px;
   background-image: url('../img/payment-sprites.png');
   display: inline-block;
-  margin-top: 25px;
-  margin-right: 10px;
-  margin-bottom: 5px;
+  margin: 8.6206% 3.4482% 1.7241% 0;
 }
-html footer.footer-site .footer-container .payment .payment-icons .mastercard {
+html .main-footer .row .footer-content .footer-payment .payment-icons .mastercard {
   background-position: 0 0;
 }
-html footer.footer-site .footer-container .payment .payment-icons .visa {
+html .main-footer .row .footer-content .footer-payment .payment-icons .visa {
   width: 41px;
   background-position: -45px 0;
 }
-html footer.footer-site .footer-container .payment .payment-icons .bank {
+html .main-footer .row .footer-content .footer-payment .payment-icons .bank {
   width: 42px;
   background-position: -87px 0;
 }
-html footer.footer-site .footer-container .payment .payment-icons .sofort {
+html .main-footer .row .footer-content .footer-payment .payment-icons .sofort {
   width: 75px;
   height: 25px;
   background-position: 0 -29px;
 }
-html footer.footer-site .footer-container .payment .payment-icons .bitcoin {
+html .main-footer .row .footer-content .footer-payment .payment-icons .bitcoin {
   width: 75px;
   height: 25px;
   background-position: -75px -29px;
 }
-html footer.footer-site .footer-bottom {
+html .main-footer .footer-bottom {
   background-color: #000001;
+  padding: 1.666666% 0;
 }
-html footer.footer-site .footer-bottom p {
-  margin-top: 20px;
-  margin-bottom: 20px;
+html .main-footer .footer-bottom p {
   text-align: center;
   color: #ffffff;
 }

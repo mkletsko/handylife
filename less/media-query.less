@@ -316,6 +316,113 @@
     }
   }/* END Sellers */
 
+  /* Services */
+  .services {
+
+    /* sellers content */
+    div.services-content {
+      width: 100%;
+      display: block;
+      overflow: auto;
+
+      /* Block-services */
+      div.block-services {
+        width: 60%;
+        max-width: 310px;
+        margin: 0 auto 2%;
+        .img-service {
+          a {
+            padding: 0 10%;
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+          }
+        }
+        h3 {
+          font-size: 1.5em;
+        }
+        p {
+          font-size: 0.8em;
+        }
+      }
+      /* END Block-services */
+
+    }/* END sellers content */
+
+  }/* END Services */
+
+
+  /* news */
+  .news {
+    h2 {
+      font-size: 1.5em;
+    }
+    div.news-content {
+      padding: 0 1%;
+      overflow: auto;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      -webkit-box-orient: vertical;
+      div.new {
+        width: 60%;
+        max-width: 320px;
+        margin: 0 auto 2%;
+        .img-new {
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+    }
+  }
+  /* END news */
+
+
+  /* footer */
+  div.main-footer {
+    .row {
+      .footer-content {
+        padding-left: 1%;
+        flex-direction: row;
+        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        .column-foot {
+          width: 60%;
+          max-width: 320px;
+          margin: 0 auto 2%;
+          border-bottom: 1px solid whitesmoke;
+        }
+
+        .footer-newsletter {
+          border-bottom: none;
+          .footer-form {
+            input {
+              padding: 1.5%;
+              font-size: 0.9em;
+            }
+          }
+        }
+
+        .footer-payment {
+          border-bottom: none;
+        }
+
+      }
+    }
+    .footer-bottom {
+      font-size: 0.9em;
+    }
+  }
+  /* END footer */
+
+
 }/* END Other Extra small devices (phones, max 568px) */
 
 
@@ -515,6 +622,7 @@
   .sellers {
     .row {
       .sellers-content {
+        padding: 0 1%;
         .tabs {
           ul.nav-tabs {
             width: 100%;
@@ -530,6 +638,7 @@
               div.sel {
                 width: 50%;
                 height: 260px;
+                max-width: none;
                 margin-bottom: 5px;
                 div.sel-img {
                   img {
@@ -572,6 +681,105 @@
       }
     }
   }/* END Sellers */
+
+  /* Services */
+  .services {
+    /* sellers content */
+    div.services-content {
+      padding: 0 1%;
+      display: block;
+
+      /* Block-services */
+      div.block-services {
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        p {
+          width: 72.972972%;
+          margin: 0 auto;
+          font-size: 0.9em;
+        }
+      }
+      div.block-services:nth-child(2) {
+        float: right;
+        margin-right: 0%;
+      }
+      /* END Block-services */
+
+    }/* END sellers content */
+
+  }/* END Services */
+
+
+  /* news */
+  .news {
+    div.news-content {
+      padding: 0 1%;
+      overflow: auto;
+      flex-direction: row;
+      justify-content: space-between;
+      -webkit-box-orient: vertical;
+      align-items: flex-start;
+      flex-wrap: wrap;
+
+      div.new {
+        width: 49%;
+        height: 50%;
+        margin-bottom: 2%;
+        .img-new {
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+    }
+  }
+  /* END news */
+
+
+  /* footer */
+  div.main-footer {
+    .row {
+      .footer-content {
+        padding-left: 1%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        flex-wrap: wrap;
+
+        .footer-logo {
+          width: 33%;
+          img {
+            max-width: 90%;
+          }
+        }
+
+        .footer-information {
+          width: 33%;
+        }
+
+        .footer-support {
+          width: 33%;
+        }
+
+        .footer-newsletter {
+          width: 50%;
+          margin-top: 5%;
+        }
+
+        .footer-payment {
+          width: 50%;
+          margin-top: 5%;
+        }
+
+      }
+    }
+  }
+  /* END footer */
+
 
 }/* END Extra small devices (phones, 568px) and up */
 
@@ -702,6 +910,7 @@
   .sellers {
     .row {
       .sellers-content {
+        padding: 0 1%;
         .tabs {
           .tab-content {
             .tab-pane {
@@ -738,6 +947,44 @@
       }
     }
   }/* END Sellers */
+
+
+  /* Services */
+  .services {
+    /* sellers content */
+    .services-content {
+      padding: 0 1%;
+      /* Block-services */
+      .block-services {
+        p {
+          width: 72.972972%;
+          margin: 0 auto;
+          font-size: 0.9em;
+        }
+      }
+      /* END Block-services */
+
+    }/* END sellers content */
+
+  }/* END Services */
+
+  /* news */
+  .news {
+    .news-content {
+      padding: 0 1%;
+    }
+  }
+  /* END news */
+
+  /* footer */
+  div.main-footer {
+    .row {
+      .footer-content {
+        padding-left: 1%;
+      }
+    }
+  }
+  /* END footer */
 
 }/* END Small devices (tablets, 768px and up) */
 
@@ -823,6 +1070,7 @@
   .sellers {
     .row {
       .sellers-content {
+        padding: 0 1%;
         .tabs {
           .tab-content {
             .tab-pane {
@@ -846,9 +1094,41 @@
     }
   }/* END Sellers */
 
+  /* Services */
+  .services {
+    /* sellers content */
+    .services-content {
+      padding: 0 1%;
+      /* Block-services */
+      .block-services {
+
+      }
+      /* END Block-services */
+
+    }/* END sellers content */
+
+  }/* END Services */
+
+
+  /* news */
+  .news {
+    .news-content {
+      padding: 0 1%;
+    }
+  }
+  /* END news */
+
+  /* footer */
+  div.main-footer {
+    .row {
+      .footer-content {
+        padding-left: 1%;
+      }
+    }
+  }
+  /* END footer */
 
 }/* END Medium devices (desktops, 992px and up) */
-
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) {}

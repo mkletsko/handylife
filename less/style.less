@@ -7,6 +7,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 html {
@@ -614,213 +621,292 @@ html {
 
 
 
-
   /* Services */
   .services {
-    margin-bottom: 45px;
-    .service {
-      width: 31%;
-      height: 295px;
-      margin-top: 40px;
-      margin-left: 30px;
-      border: 1px solid #e0e0e0;
-      text-align: center;
-      img {
-        margin-top: 30px;
-        vertical-align: middle;
-      }
-      h3 {
-        margin-top: 25px;
-        margin-bottom: 28px;
-        font-family: Avalon;
-        font-size: 22pt;
-        color: #0098c8;
-      }
-    }
-    .service:nth-child(1){
-      margin-left: 0;
-    }
-  }/* END Services */
+    padding-top: 3.285714%;
+    padding-bottom: 3.4285%;
 
-  /*news*/
-  .news {
-    .new {
-      width: 23%;
-      height: 470px;
-      margin-top: 50px;
-      margin-bottom: 95px;
-      margin-left: 30px;
-      padding: 0;
-      background-color: #ffffff;
-      border: 1px solid #e0e0e0;
-      text-align: left;
-      font-size: 10pt;
-      color: #5b5c5a;
-      img {
-        width: 100%;
-      }
-      .news-description {
-        padding: 20px;
-        h4 {
-          font-family: Roboto;
-          font-size: 14pt;
-        }
-        a {
-          font-style: italic;
-          color: @fon-element-yellow;
-        }
-        footer {
+    /* sellers content */
+    .services-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      justify-content: space-between;
+      text-align: center;
+
+      /* Block-services */
+      .block-services {
+        width: 31%;
+        height: 100%;
+        overflow: hidden;
+        border: 1px solid #e0e0e0;
+        padding-bottom: 2%;
+        .img-service {
           a {
-            font-style: normal;
-            font-weight: bold;
+            width: 100%;
+            bottom: 0;
+            display: block;
+            img {
+              margin-top: 10px;
+            }
+          }
+        }
+        h3 {
+          font-size: 1.8402083517355998em;
+          color: #0098c8;
+        }
+        p {
+          width: 72.972972%;
+          margin: 0 auto;
+        }
+      }/* END Block-services */
+      .block-services:nth-child(2) {
+        .img-service {
+          a {
+            margin-top: 20px;
           }
         }
       }
-    }
-    .new:nth-child(2){
-      margin-left: 0;
-    }
+
+    }/* END sellers content */
+
+  }/* END Services */
+
+
+
+  /*news*/
+  .news {
+    padding-top: 5.4166%;
+    padding-bottom: 7.9166%;
+    text-align: center;
     h2 {
-      margin-top: 60px;
-      font-family: Avalon;
-      font-size: 32pt;
+      font-size: 2.6766666934336em;
       color: #5b5c5a;
-      text-align: center;
+      margin-bottom: 4.1666%;
+    }
+    .news-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      display: -webkit-flex; /* Safari */
+      justify-content: space-between;
+      text-align: left;
+
+      /* new */
+      .new {
+        width: 22%;
+        background-color: white;
+        border: 1px solid #e0e0e0;
+        overflow: auto;
+
+        /* img-new */
+        .img-new {
+          width: 100%;
+          height: 50%;
+
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+
+        }/* END img-new */
+
+        /* news-description */
+        .news-description {
+          height: 50%;
+          padding: 5.11111% 9.2592% 11.11111% 9.2592%;
+
+          article {
+            header {
+              margin-bottom: 0;
+              h4 {
+                font-size: 1.5056250150564em;
+              }
+            }
+            a {
+              font-style: italic;
+              color: @fon-element-yellow;
+            }
+            footer {
+              a {
+                font-style: normal;
+                font-weight: bold;
+              }
+            }
+          }
+
+        }/* END news-description */
+
+      }/* END new */
+
     }
 
   }/* END news */
 
+
+
   /* Footer */
-  footer.footer-site {
+  .main-footer {
     background-color: #1c2024;
-    padding-top: 25px;
-    font-family: Roboto;
-    font-size: 10pt;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1710416783772em;
+    line-height: 1.5056250150564em;
     color: #ffffff;
-    .footer-container {
-      padding-bottom: 30px;
-      .footer-logo {
-        p {
-          margin-top: 20px;
+    .row {
+      /* footer-content */
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1.666666% 0 2.916666% 0;
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+
+        .column-foot {
+          p {
+            width: 87%;
+          }
+          h4, img {
+            padding-bottom: 2.91666%;
+            font-size: 1.2056250150564em;
+          }
+          a {
+            clear: left;
+            line-height: 2.0075000200752em;
+            color: #ffffff;
+          }
         }
-      }
-      .footer-information {
-        padding-right: 0;
-        text-align: left;
-        h4 {
-          margin-bottom: 32px;
+
+        .footer-logo {
+          width: 29%;
         }
-        a {
-          color: #ffffff;
+
+        .footer-information {
+          width: 16%;
         }
-      }
-      .newsletter {
-        padding-right: 0;
-        p {
-          margin-top: 32px;
+
+        .footer-support {
+          width: 14.5%;
         }
-        /*footer form*/
-        .footer-form {
-          width: 100%;
-          margin-top: 12px;
-          float: left;
-          color: #ffffff;
-          input {
+
+        .footer-newsletter {
+          width: 25%;
+
+          /* footer form */
+          .footer-form {
+            width: 100%;
+            margin-top: 6.896551%;
             float: left;
-            height: 35px;
-            padding: 5px 0 5px 15px;
-            background-color: #000000;
-            border-color: black;
-          }
-          button {
-            width: 30px;
-            height: 35px;
-            background-color: @fon-element-yellow;
-            color: white;
-            border: none;
-          }
+            color: #ffffff;
+            input {
+              width: 70%;
+              float: left;
+              height: 35px;
+              padding: 5px 0 5px 15px;
+              background-color: #000000;
+              border: none;
+            }
+            button {
+              width: 10%;
+              //width: 30px;
+              height: 35px;
+              background-color: @fon-element-yellow;
+              color: white;
+              border: none;
+            }
+          }/* END footer form */
+
+          /* social networks sprite */
+          .social-icons {
+            .social-icon {
+              width: 26px;
+              height: 26px;
+              background-image: url('../img/social-sprites.png');
+              display: inline-block;
+              margin: 8.6206% 3.4482% 1.7241% 0;
+
+            }
+            .social-icon:hover {
+              background-color: #34343b;
+            }
+            .facebook {
+              background-position: 0 0;
+            }
+
+            .twitter {
+              background-position: -26px 0;
+            }
+
+            .google-plus {
+              background-position: -52px 0;
+            }
+
+            .pinterest {
+              background-position: -78px 0;
+            }
+          }/* END social networks sprite */
+
         }
-        /*END footer form*/
-        /*social networks sprite*/
-        .social-icons {
-          .social-icon {
-            width: 26px;
-            height: 26px;
-            background-image: url('../img/social-sprites.png');
-            display: inline-block;
-            margin-top: 25px;
-            margin-right: 10px;
-            margin-bottom: 5px;
-          }
-          .social-icon:hover {
-            background-color: #34343b;
-          }
-          .facebook {
-            background-position: 0 0;
-          }
 
-          .twitter {
-            background-position: -26px 0;
-          }
+        .footer-payment {
+          width: 15.5%;
 
-          .google-plus {
-            background-position: -52px 0;
-          }
+          /* payment sprites */
+          .payment-icons {
+            width: 100%;
+            margin: 0 auto;
+            .payment-icon {
+              width: 45px;
+              height: 30px;
+              background-image: url('../img/payment-sprites.png');
+              display: inline-block;
+              margin: 8.6206% 3.4482% 1.7241% 0;
+            }
+            .mastercard {
+              background-position: 0 0;
+            }
+            .visa {
+              width: 41px;
+              background-position: -45px 0;
+            }
+            .bank {
+              width: 42px;
+              background-position: -87px 0;
+            }
 
-          .pinterest {
-            background-position: -78px 0;
-          }
+            .sofort {
+              width: 75px;
+              height: 25px;
+              background-position: 0 -29px;
+            }
+
+            .bitcoin {
+              width: 75px;
+              height: 25px;
+              background-position: -75px -29px;
+            }
+          }/* END payment sprites */
+
         }
-        /*END social networks sprite*/
 
-      }
-      .payment {
-        padding-right: 0;
-        /*payment sprites*/
-        .payment-icons {
-          .payment-icon {
-            width: 45px;
-            height: 30px;
-            background-image: url('../img/payment-sprites.png');
-            display: inline-block;
-            margin-top: 25px;
-            margin-right: 10px;
-            margin-bottom: 5px;
-          }
-          .mastercard {
-            background-position: 0 0;
-          }
-          .visa {
-            width: 41px;
-            background-position: -45px 0;
-          }
-          .bank {
-            width: 42px;
-            background-position: -87px 0;
-          }
-          .sofort {
-            width: 75px;
-            height: 25px;
-            background-position: 0 -29px;
-          }
-          .bitcoin {
-            width: 75px;
-            height: 25px;
-            background-position: -75px -29px;
-          }
-        }
-        /*END payment sprites*/
-      }
+      }/* END footer-content */
     }
+
     .footer-bottom {
       background-color: #000001;
+      padding: 1.666666% 0;
       p {
-        margin-top: 20px;
-        margin-bottom: 20px;
         text-align: center;
         color: #ffffff;
       }
     }
+
   }/*END Footer*/
     
 }/*html, body*/
